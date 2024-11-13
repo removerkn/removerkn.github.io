@@ -1,0 +1,131 @@
+/* Сброс стандартных отступов и маргинов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Общие стили для сайта */
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #242329; /* Основной задний фон */
+    color: #c9d1d9;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Фон с сеткой точек 50x50 и цветом #b3b3b3 */
+.background-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><circle cx="25" cy="25" r="2" fill="%23b3b3b3"/></svg>') repeat;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Центрирование содержимого */
+.container {
+    width: 90%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Стили для никнейма и аватара в левой части bio-card */
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #30363d;
+    margin-bottom: 8px;
+}
+
+.nickname {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+/* Заголовок about me */
+h2 {
+    color: #8b949e;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 1.4em;
+}
+
+/* Блок с биографией */
+.bio-card {
+    background-color: #28272E; /* Цвет фона блока с информацией */
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid #535258;
+    text-align: left;
+    margin-top: 25px;
+    width: 100%;
+    color: #c9d1d9;
+    font-size: 1.1em;
+}
+
+/* Стили для списка */
+.bio-card ul {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.bio-card ul li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #b1bac4;
+}
+
+/* Стили для выделенного текста */
+strong {
+    color: #58a6ff;
+}
+
+/* Градиент для кнопки Telegram */
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #1488cc, #2b32b2);
+    color: #ffffff;
+    border-radius: 28px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 1.1em;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(240, 93, 107, 0.6);
+}
+
+/* Стили для футера */
+footer {
+    margin-top: 40px;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 1em;
+}
+
+footer p {
+    color: #6e7681;
+}
